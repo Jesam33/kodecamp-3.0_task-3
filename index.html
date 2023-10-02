@@ -9,40 +9,47 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="media.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <!-- 1st container -->
     <div class="container">
-        <header class="pri-text-col">
-            <div class="logo">
-                <h2>{Finsweet</h2>
-            </div>
-            <nav class="d-flex">
-                <ul class="d-flex">
-                    <li>Home</li>
-                    <li>About us</li>
-                    <li>Services</li>
-                    <li>Blog</li>
-                    <li>Contact</li>
-                </ul>
-    
-                <div class="contact-info d-flex">
-                    <div class="nav-logo">
-                        <img src="img\Assistance Icon.png" alt="contact-icon" width="20px">
-                    </div>
-                    <div class="nav-text">
-                        <p id="p1">Road Assistance</p>
-                        <p>+2348146580831</p>
-                    </div>
+        <div class="header-contain">
+            <header class="pri-text-col">
+                <div class="logo">
+                    <h2>{Finsweet</h2>
                 </div>
-
-            </nav>
-        </header>
-
+                <nav class="d-flex">
+                    <ul class="d-flex">
+                        <li><a>Home</a></li>
+                        <li><a>About us</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+        
+                    <div class="d-flex contact-info">
+                        <div class="nav-logo">
+                            <img src="img\Assistance Icon.png" alt="contact-icon" width="20px">
+                        </div>
+                        <div class="nav-text">
+                            <p id="p1">Road Assistance</p>
+                            <p>+2348146580831</p>
+                        </div>
+                    </div>
+    
+                </nav>
+                <div class="menu-bar">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </header>
+    
+        </div>
         <div class="sub-container bg-1">
 
             <div class="left ">
-                <h2 class="fs-1 mt-6 her0-txt">Get your vehicle service done online at one place</h2>
+                <h2 class="fs-1 mt-6 hero-txt">Get your vehicle <br/> service done online <br/> at one place</h2>
                 <button class="btn fs-5 mt-3">Book a service</button>
                 <div class="time-date-info d-flex mt-4">
                     <img src="./img/Icon-time.png" alt="" width="26px">
@@ -65,7 +72,7 @@
     <div class="container  bg-2">
         <div class="sub-container">
             <div class="left ">
-                <h2 class="fs-2 ">We are taking car <br/> servicing seriously</h2>
+                <h2 class="fs-2 ">We are taking car <br class="hide"/> servicing seriously</h2>
                 <div class="services-wrapper">
                     <!-- serv-1 -->
                     <div class="services mt-3">
@@ -182,9 +189,9 @@
                     </div>
                     <div class="box-text">Engine Repair</div>
                 </div>
-                <div id="box-1-red">
+                <div id="active" class="box-1">
                     <div class="logo-box">
-                        <img src="./img/box-3.png" alt="">
+                        <img src="./img/box-5.png" alt="">
                     </div>
                     <div class="box-text">Wheel Repair</div>
                 </div>
@@ -226,6 +233,7 @@
         </div>
     </div>
 
+    
      <!-- 5th container -->
         <div class="container red bg-5">
             <div class="get-in-touch">
@@ -266,9 +274,6 @@
                         </div>
                     </div>
                     <!-- brands we serve -->
-                    <div class="brands">
-                        <h3>Brands we Serve</h3>
-                    </div>
                 </div>
             </div>
         </div>
